@@ -1,0 +1,48 @@
+body{
+    background: black;
+}
+
+.container{
+    height: 100%;
+    /* margin: 100px;
+    background: red; */
+}
+
+.cub{
+    background: #bdcfac;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 200px;
+}
+
+.line{
+    height: 25px;
+    background: #398762;
+    position: absolute;
+    width: 1px;
+    left: 30%;
+    top: 10%;
+}
+
+span{
+    opacity: 0;
+}
+
+.cub:hover span{
+    opacity: 1;
+    color: #398762;
+    font-size: 2rem;
+    position: absolute;
+    right: 47%;
+    top: 30%;
+    transition-delay: 2s;
+}
+
+.cub:hover .line{
+    width: 50%;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
